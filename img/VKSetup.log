@@ -1,8 +1,0 @@
-﻿Message: 06.10.2021 15:25:04.458 11532 Starting D:\method_cinema\img\VKSetup.exe
-Message: 06.10.2021 15:25:04.550 11532 Removed __COMPAT_LAYER: DetectorsAppHealth
-Message: 06.10.2021 15:25:04.554 11532 Installer files path: C:\Users\Джулик\AppData\Local\Temp\~TVkSetupApp\
-Message: 06.10.2021 15:25:04.830 11532 Extract installer files: OK
-Message: 06.10.2021 15:25:05.098 11532.11172 [TClientFilesExtractThread] decompress started
-Message: 06.10.2021 15:25:11.898 11532.11172 [TClientFilesExtractThread] Extract app files: OK
-Message: 06.10.2021 15:25:11.898 11532.11172 [TClientFilesExtractThread] Chrome decompress finished
-Message: 06.10.2021 15:25:12.368 11532.9968 [Main] Finished
