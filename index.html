@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema-онлайн кинотеатр</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <script type="module">
+        import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.esm.js";
+    </script>
+    
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <p class="header__logo">
+                <span class="header__logo-primary">Methed</span> Cinema
+            </p>
+            <form  class="header__search-form" action="#">
+                <input  class="header__search-input" type="search" required placeholder="Поиск">
+            </form>
+            <button class="header__burger-btn js-burger-btn" aria-label="открыть меню">
+                <svg class="header__burger-svg" width="40" height="40" 
+                viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.94403 9.8959H34.6564"  stroke-width="2.475" 
+                    stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M28.0537 19.8H4.94403"  stroke-width="2.475" 
+                    stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4.94403 29.7041H21.4509"  stroke-width="2.475" 
+                    stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="film-week">
+            <div class="container film-week__container">
+                <img class="film-week__poster" src="img/dune.jpg" alt="постер фильма Дюна">
+                <h2 class="film-week__title">ДЮНА</h2>
+                <p class="film-week__tagline">За пределами страха ждёт судьба</p>
+                <button class="film-week__watch-btn">Смотреть фильм</button>
+                <a  class="film-week__watch-trailer" href="https://youtu.be/DOlTmIhEsg0" 
+                aria-label="смотреть трейлер" data-fancybox></a>
+            </div>
+        </section>
+
+        <section class="other-films">
+            <div class="container">
+                <h2 class="other-films__title">Другие фильмы
+                    <span class="other-films__title-add">на Methed Cinema</span>
+                </h2>
+
+                <ul class="other-films__list">
+                    <li class="other-films__item">
+                        <a href="https://youtu.be/MLj1nXTqc3g" data-fancybox class="other-films__link">
+                            <img src="/img/shang_chi.jpg" alt="постер к фильму Шан-Чи" class="other-films__img">
+                        </a>
+                    </li>
+                    <li class="other-films__item">
+                        <a href="https://youtu.be/wnS4A5-vtFA" data-fancybox class="other-films__link">
+                            <img src="/img/free_guy.jpg" alt="постер к фильму Главный Герой" class="other-films__img">
+                        </a>
+                    </li>
+                    <li class="other-films__item">
+                        <a href="https://youtu.be/zeKFmhPKgDs" data-fancybox class="other-films__link">
+                            <img src="/img/addams_family.jpg" alt="постер к фильму Семейка Адамс" class="other-films__img">
+                        </a>
+                    </li>
+                    <li class="other-films__item">
+                        <a href="https://youtu.be/PJX6a06gnEY" data-fancybox class="other-films__link">
+                            <img src="/img/no_time_to_die.jpg" alt="постер к фильму Не время умирать" class="other-films__img">
+                        </a>
+                    </li>
+                    <li class="other-films__item">
+                        <a href="https://youtu.be/Db6mD3VuQ_w" data-fancybox class="other-films__link">
+                            <img src="/img/matrix.jpg" alt="постер к фильму Матрица 4" class="other-films__img">
+                        </a>
+                    </li>
+                    <li class="other-films__item">
+                        <a href="https://youtu.be/y-ENI9NQguA" data-fancybox class="other-films__link">
+                            <img src="/img/spiderman.jpg" alt="постер к фильму Человек Паук 3" class="other-films__img">
+                        </a>
+                    </li>
+                    <li class="other-films__item">
+                        <a href="https://youtu.be/cnn8xghmxZA" data-fancybox class="other-films__link">
+                            <img src="/img/infinite.jpg" alt="постер к фильму Бесконечность" class="other-films__img">
+                        </a>
+                    </li>
+                    <li class="other-films__item">
+                        <a href="https://youtu.be/Y7chRThbVF0" data-fancybox class="other-films__link">
+                            <img src="/img/eternals.jpg" alt="постер к фильму Вечные" class="other-films__img">
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="other-films__btn">Выбрать, что посмотреть</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__column contacts">
+                <p class="contactc logo">
+                    <span class="contacts__logo-primary">METHED</span> CINEMA
+                </p>
+
+                <p class="container__description">онлайн-кинотеатр</p>
+                <a href="tel:88003336202" class="contacts__phone">8 800 333 62 02</a>
+                <a href="mailto:help@tvmethod.ru" class="contacts__mail">help@tvmethod.ru</a>
+                <a href="mailto:pressa@tvmethod.ru" class="contacts__mail">pressa@tvmethod.ru</a>
+            </div>
+            <div class="footer__column subnav">
+                <ul class="subnav__list">
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link">
+                            Публичная оферта
+                        </a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link">
+                            Партнерам
+                        </a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link">
+                            FAQ
+                        </a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link">
+                            Приложения
+                        </a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link">
+                            Карта сайта
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__column regulation">
+                <img class="regulation__age" src="img/18+.svg" alt="Только для совершеннолетних">
+                <p class="regulation__offer">Просматривая материалы, находящиеся на настоящем сайте, вы обязуетесь выполнять условия Публичной оферты</p>
+            </div>
+            <div class="footer__column partners">
+                <img class="partners__me" src="img/me.svg" alt="Логотип Methed">
+                <p class="partners__description">Исследования осуществляются ООО «МЕТЭД ДЕВЕЛОПМЕНТ» при  поддержке Фонда «SPB Tech»</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <nav class="navigation js-navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">Публичная оферта</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">Партнерам</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">FAQ</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">Приложения</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">Карта сайта</a>
+            </li>
+        </ul>
+        <batton class="navigation__close js-navigation-close">
+            <svg class="navigation__close-cross" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30px" height="30px">    <path d="M 7 4 C 6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688 L 4.2929688 6.2929688 C 3.9019687 6.6839688 3.9019687 7.3170313 4.2929688 7.7070312 L 11.585938 15 L 4.2929688 22.292969 C 3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031 L 6.2929688 25.707031 C 6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.682969 26.098031 23.317031 26.098031 23.707031 25.707031 L 25.707031 23.707031 C 26.098031 23.316031 26.098031 22.682969 25.707031 22.292969 L 18.414062 15 L 25.707031 7.7070312 C 26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688 L 23.707031 4.2929688 C 23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688 L 15 11.585938 L 7.7070312 4.2929688 C 7.5115312 4.0974687 7.255875 4 7 4 z"/></svg>
+        </batton>
+    </nav>
+
+</body>
+</html>
